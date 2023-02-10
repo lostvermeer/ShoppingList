@@ -1,0 +1,11 @@
+Homework 4
+Create a form to search for cars in the bazaar menu. Create a new route for the car dealership, 
+on the route there will be a list of ads (table, tile - not important) and a button to open a modal 
+window with a form. The form will contain at least fields for:
+brand selection (select) - at least 2 brands
+brand model selection (select - reacts to the selected brand) - at least 2 models from each brand
+number of kilometers from - to
+price from - to
+fuel (radio buttons with petrol, diesel, electricity options)
+There will be a button in the form that will start the search and display only those that meet the specified 
+conditions in the list of advertisements.

@@ -1,0 +1,74 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","AsidExecutives","AsidLicenseOwner","Public"],
+    "useCaseMap": {}
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","AwidLicenseOwner","Public","Authenticated","AwidInitiator"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created","assigned"],
+        "profileList": ["AwidLicenseOwner","AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authenticated"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public","AwidLicenseOwner"]
+      },
+      "item/view": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","AwidLicenseOwner"]
+      },
+      "item/add": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      },
+      "item/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","AwidLicenseOwner"]
+      },
+      "item/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      },
+      "item/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      },
+      "item/checkmark": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","AwidLicenseOwner"]
+      },
+      "shopList/view": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","AwidLicenseOwner"]
+      },
+      "shopList/add": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      },
+      "shopList/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Public","AwidLicenseOwner"]
+      },
+      "shopList/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      },
+      "shopList/shopListItems": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","AwidLicenseOwner"]
+      }
+    }
+  }
+}

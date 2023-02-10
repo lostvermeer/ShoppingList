@@ -1,0 +1,15 @@
+{
+	"awid": "22222222222222222222222222222222",
+	"name": "My new Item",
+	"shoppingListId": "6390e65afc538d25ecbfe348",
+	"checkmark": true,
+	"owner": "8781-3605-1",
+	"create": 1670580022255,
+	"sys": {
+		"cts": "2022-12-09T10:00:22.255Z",
+		"mts": "2022-12-09T10:00:22.255Z",
+		"rev": 0
+	},
+	"id": "639307361fe9300ac88dee59",
+	"uuAppErrorMap": {}
+}
