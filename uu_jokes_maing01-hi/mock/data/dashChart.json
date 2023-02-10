@@ -1,0 +1,50 @@
+{ 
+    "series": [ 
+        {
+        "valueKey": "value",
+        "name": "First chart",
+        "colorSchema": "red"
+        },
+        {
+        "valueKey": "value2",
+        "name": "Second chart",
+        "colorSchema": "blue"
+        },
+        {
+        "valueKey": "value3",
+        "name": "Third chart"
+        }
+    ],
+    "data": [
+        {
+        "label": "Jan",
+        "value": 40000,
+        "value2": 30000,
+        "value3": 10000
+        },
+        {
+        "label": "Feb",
+        "value": 300,
+        "value2": 100,
+        "value3": 200
+        },
+        {
+        "label": "Mar",
+        "value": 200,
+        "value2": 140,
+        "value3": 300
+        },
+        {
+        "label": "Apr",
+        "value": 278,
+        "value2": 200,
+        "value3": 400
+        },
+        {
+        "label": "May",
+        "value": 189,
+        "value2": 290,
+        "value3": 140
+        }
+    ]
+}

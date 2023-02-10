@@ -1,0 +1,86 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/JokesMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/JokesMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/JokesMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "item/view": {
+        "realization": "api/controllers/ItemController.view",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "item/add": {
+        "realization": "api/controllers/ItemController.add",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "item/list": {
+        "realization": "api/controllers/ItemController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "item/update": {
+        "realization": "api/controllers/ItemController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "item/delete": {
+        "realization": "api/controllers/ItemController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "item/checkmark": {
+        "realization": "api/controllers/ItemController.checkmark",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shopList/view": {
+        "realization": "api/controllers/ShopListController.view",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "shopList/add": {
+        "realization": "api/controllers/ShopListController.add",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shopList/list": {
+        "realization": "api/controllers/ShopListController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "shopList/delete": {
+        "realization": "api/controllers/ShopListController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shopList/shopListItems": {
+        "realization": "api/controllers/ShopListController.shopListItems",
+        "httpMethod": "GET",
+        "type": "CMD"
+      }
+    }
+  }
+}
