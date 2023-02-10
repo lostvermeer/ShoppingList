@@ -1,5 +1,5 @@
 //@@viewOn:imports
-import { createVisualComponent, Utils, Content } from "uu5g05";
+import { createVisualComponent, Utils, Content, PropTypes } from "uu5g05";
 import Config from "./config/config.js";
 import DashChart, { Chart } from "./dashChart";
 import ChartProvider from "./chart/chart-provider";
@@ -26,7 +26,9 @@ const Main = createVisualComponent({
   //@@viewOff:statics
 
   //@@viewOn:propTypes
-  propTypes: {},
+  propTypes: {
+    TeacherPofile: PropTypes.object
+  },
   //@@viewOff:propTypes
 
   //@@viewOn:defaultProps
@@ -48,7 +50,7 @@ const Main = createVisualComponent({
     return (
       <>
 
-      <div style={{marginTop: "75px"}}><Profile/></div>
+      <div style={{marginTop: "75px"}}><Profile Profile = {props.TeacherPofile}/></div>
       <div style={{width:"650px"}}><h1>Prubezne hodnocení podle temat</h1><ChartProvider><DashChart/></ChartProvider></div>
 
       </>

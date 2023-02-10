@@ -1,5 +1,5 @@
 //@@viewOn:imports
-import { createVisualComponent, Utils, Content } from "uu5g05";
+import { createVisualComponent, Utils, Content, PropTypes } from "uu5g05";
 import Config from "./config/config.js";
 //@@viewOff:imports
 
@@ -22,7 +22,9 @@ const Profile = createVisualComponent({
   //@@viewOff:statics
 
   //@@viewOn:propTypes
-  propTypes: {},
+  propTypes: {
+    Profile: PropTypes.object
+  },
   //@@viewOff:propTypes
 
   //@@viewOn:defaultProps
@@ -51,11 +53,11 @@ const Profile = createVisualComponent({
       <div>
       <div style={{ display: "flex", width:"650px", height: "290px", textAlign: "center", border: '2px solid black'}}> 
         <div style={{margin: "10px", width:"200px", height: "200px", textAlign: "center"}}><UU5.Bricks.Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sir-john-meurig-thomas_rare-book-room.jpg/150px-Sir-john-meurig-thomas_rare-book-room.jpg"
+          src = {props.Profile.picture}
           width={200} />
         </div>
 
-        <div style={{ width:"450px", height: "200px", textAlign: "Left"}}><h2>Professor Liam</h2> <p>Mr.Glynn Liam is the Professor of General Practice at the University of Limerick School of Medicine. He was previously Senior Lecturer in General Practice in the College of Medicine, Nursing and Health Sciences, National University of Ireland, Galway and also Adjunct Senior Clinical Lecturer, School of Medicine, University of Limerick.</p> 
+        <div style={{ width:"450px", height: "200px", textAlign: "Left"}}><h2>Professor {props.Profile.name}</h2> <p>{props.Profile.text}</p> 
         <UU5.Bricks.Button
           onClick={sayHello}
           size="xl"

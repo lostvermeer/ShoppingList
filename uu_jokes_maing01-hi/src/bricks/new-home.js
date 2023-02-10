@@ -28,7 +28,9 @@ const NewHome = createVisualComponent({
 
   //@@viewOn:propTypes
   propTypes: {
-    studentsArray: PropTypes.array
+    studentsArray: PropTypes.array,
+    UpperBox: PropTypes.array,
+    TeacherPofileVC: PropTypes.object
   },
   //@@viewOff:propTypes
 
@@ -54,17 +56,17 @@ const NewHome = createVisualComponent({
 
           <div style = {{display: 'flex'}}>
 
-          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = "Počet dnů hatchery" amount = "45" /></div> 
-          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = "Počet účastínků" amount = "28" /></div> 
-          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = "Počet lektorů" amount = "7" /></div> 
-          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = "Hodnocení" amount = "87%" /></div> 
+          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = {props.UpperBox[0].title}  amount = {props.UpperBox[0].name} /></div> 
+          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = {props.UpperBox[1].title}  amount = {props.UpperBox[1].name}/></div> 
+          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = {props.UpperBox[2].title}  amount = {props.UpperBox[2].name} /></div> 
+          <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', height: "2cm", fontWeight: 'bold', marginLeft: "150px"}}><CountBox title = {props.UpperBox[3].title}  amount = {props.UpperBox[3].name} /></div> 
           
           </div> 
           
           <br></br>
 
           <div style = {{display: 'flex', marginLeft: "30px"}}>
-          <Main/>
+          <Main TeacherPofile = {props.TeacherPofileVC}/>
           </div>
 
           <div>

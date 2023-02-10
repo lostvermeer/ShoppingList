@@ -45,10 +45,36 @@ const NewHome = createComponent({
       }
     ];
 
+    let UpperBoxN = [
+      {
+        title: "Počet dnů hatchery",
+        name: "45"
+      },
+      {
+        title: "Počet účastínků",
+        name: "28"
+      },
+      {
+        title: "Počet lektorů",
+        name: "7"
+      },
+      {
+        title: "Hodnocení",
+        name: "86%"
+      }
+    ];
+
+    let TeacherPofileN = {
+      picture:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sir-john-meurig-thomas_rare-book-room.jpg/150px-Sir-john-meurig-thomas_rare-book-room.jpg",
+      name: "Liam Adams",
+      text: "Mr.Glynn Liam is the Professor of General Practice at the University of Limerick School of Medicine. He was previously Senior Lecturer in General Practice in the College of Medicine, Nursing and Health Sciences, National University of Ireland, Galway and also Adjunct Senior Clinical Lecturer, School of Medicine, University of Limerick."
+
+    };
+
 
     return (
       <>
-      <NewHomeVC studentsArray = {studArray}/>
+      <NewHomeVC studentsArray = {studArray} UpperBox = {UpperBoxN} TeacherPofileVC = {TeacherPofileN}/>
       </>
     );
     //@@viewOff:render
